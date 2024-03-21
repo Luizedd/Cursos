@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - Javascript</title>
+        <meta charset="UTF-8">
+
+
+        <script>
+
+			var nota=80;
+			var res;
+			//Aprovado com louvor  >=95
+			//Aprovado      	   >=60  
+			//Recuperação   	   >=40 && <60
+			//Reprovado    		   <40
+			//Reprovado sem lovour <20 	
+			
+            if(nota >= 60){
+                res="Passou"
+			    if(nota>=95){
+                    if(nota>=100){
+				        res+=" Usuário Einstein";
+                    }else{
+                        res+=" Usuário Simples Top";
+                    }
+                }else{
+			        res+=" Usuário basic luffy";
+			    }
+            }else if(nota >= 40){
+			    res="Recupera Usuário Maria";
+			}else{ 
+                res="Reprovou"
+                if(nota >20){
+				    res+=" Usuário Maria";
+			    }else{
+				    res+=" Usuário de fruta luffy";
+			    }
+            }
+
+			document.write(res);
+
+
+        </script>
+
+    </head>
+    <body>
+    
+	
+    </body>
+</html>
